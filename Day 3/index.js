@@ -6,10 +6,15 @@
 
 // Area and Circumference of Circle
 const pi=3.1459;
+let name;
+let area;
+let circumference;
 document.getElementById("button").onclick = function() {
-    let name = document.getElementById("text").value;
-    let area = pi * name * name;
-    document.getElementById("area").textContent = "Area is: " + Number(area);
-    let circumference = 2 * pi * name;
-    document.getElementById("circumference").textContent = "Circumference is: " + Number(circumference);}
+    name = document.getElementById("text").value;
+    area = pi * name * name;
+    area=Number(area);
+    document.getElementById("area").textContent = "Area is: " + area +"cm²";
+    circumference = 2 * pi * name;
+    circumference=Number(circumference);
+    document.getElementById("circumference").textContent = "Circumference is: " +circumference+"cm";};
 
