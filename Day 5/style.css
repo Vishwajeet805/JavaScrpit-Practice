@@ -1,0 +1,28 @@
+label{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+input{
+    padding: 8px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#checkButton{
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin:10px;
+    cursor: pointer;
+    background-color: rgba(194, 253, 116, 0.822);
+}
+#checkButton:hover{
+    background-color: rgba(116, 210, 253, 0.822);
+}
+#result{
+    font-size: 1.5em;
+    margin: 20px;
+    font-weight: bold;
+}
