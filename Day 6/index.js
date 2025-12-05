@@ -66,3 +66,12 @@ console.log("It is Sunday");
 default:
 console.log(`${day} is not a day`);
 }
+
+let username = window.prompt("Enter your username: ");
+
+// ----- METHOD CHAINING
+
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+console.log(username);
+
