@@ -1,33 +1,22 @@
-// .map() = accepts a callback and applies that function
-// to each element of an array, then return a new array
+// // function declaration = define a reusable block of code
+// that performs a specific task
 
-// // .filter() = creates a new array by filtering
-// out elements
+// function hello(){
+// console.log("Hello");
 
-// let numbers = [1, 2, 3, 4, 5, 6, 7];
-// let evenNums = numbers.filter(isEven);
-// let oddNums = numbers.filter(isOdd);
+// // function expressions = a way to define functions as
+// values or variables
 
-// console. log(oddNums
+// const hello = function(){
+// console.log("Hello");
 
-// function isEven(element){
-// return element % 2 === 0;
+// // arrow functions = a concise way to write function expressions
+// good for simple functions that you use only once
+// (parameters) => some code
 
-// }
+// const hello = (name, age) => {console.log( Hello ${name} )
+// console. log( You are ${age} years old')};
 
-// function isOdd(element){
-// return element % 2 !== 0;
+// VI
 
-// }
-
-// .reduce() = reduce the elements of an array
-// to a single value
-
-// const prices = [5, 30, 10, 25, 15, 20];
-
-// const total = prices.reduce(sum);
-
-// console.log($${total.toFixed(2)});
-
-// function sum(accumulator, element){
-// return accumulator + element;
+// hello("Bro", 25);|
