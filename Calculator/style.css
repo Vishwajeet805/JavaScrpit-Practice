@@ -61,7 +61,7 @@ button:active{
 }
 
 #display {
-    
+    font-family: monospace;
     width: 410px;
     font-size: 5rem;
     margin-bottom: 30px;
