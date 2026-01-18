@@ -1,0 +1,111 @@
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* common box */
+    .box {
+      width: 120px;
+      height: 120px;
+      background: lightgray;
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    /* add / remove / toggle */
+    .red {
+      background: red;
+    }
+
+    .blue {
+      background: blue;
+    }
+
+    .rounded {
+      border-radius: 50%;
+    }
+
+    .shadow {
+      box-shadow: 0 0 10px black;
+    }
+
+    /* active / hover */
+    .active {
+      background: green;
+      color: white;
+    }
+
+    /* animation */
+    .animate {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* disabled */
+    .disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    /* theme */
+    .dark {
+      background: #111;
+      color: white;
+    }
+
+    /* modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal.show {
+      display: flex;
+    }
+
+    .modal-content {
+      background: white;
+      padding: 20px;
+    }
+
+    /* accordion */
+    .content {
+      display: none;
+    }
+
+    .content.open {
+      display: block;
+    }
+
+    /* sticky */
+    header {
+      background: orange;
+      padding: 10px;
+      position: relative;
+    }
+
+    header.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
