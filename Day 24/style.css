@@ -1,0 +1,12 @@
+#mybox{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    font-size: 5rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
