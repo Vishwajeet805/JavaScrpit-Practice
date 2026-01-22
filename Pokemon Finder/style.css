@@ -6,10 +6,17 @@
 body {
     font-family: 'Barlow Condensed', sans-serif;
     height: 99vh;
-
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-shadow:
+        rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 .container {
@@ -27,39 +34,26 @@ h1 {
     letter-spacing: 3px;
     text-transform: uppercase;
     text-align: center;
-
-    background: linear-gradient(90deg,
-            #ffcb05,
-            #ff9f00,
-            #ffcb05);
+    background: linear-gradient(90deg, #ffcb05, #ff9f00, #ffcb05);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     text-shadow:
         2px 2px 0 #2a75bb,
         4px 4px 0 #1c4e8c;
-
     font-family: 'Segoe UI', 'Poppins', sans-serif;
 }
 
-
 input {
     width: 100%;
-    /* Makes the input field span the full width of its container */
     padding: 12px 20px;
-    /* Adds space inside the input field */
     margin: 8px 0;
-    /* Adds space outside the input field */
     display: inline-block;
     border: 1px solid #ccc;
-    /* Sets a standard border */
     border-radius: 4px;
-    /* Rounds the corners */
     box-sizing: border-box;
-    /* Ensures padding and border are included in the total width */
 }
 
-.InputContainer {
+.Search {
     width: 210px;
     height: 50px;
     display: flex;
@@ -70,93 +64,6 @@ input {
     overflow: hidden;
     cursor: pointer;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
-}
-
-.beautiful-button {
-    position: relative;
-    display: inline-block;
-    background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
-    /* Gradient background */
-    color: white;
-    /* White text color */
-    font-family: "Segoe UI", sans-serif;
-    /* Stylish and legible font */
-    font-weight: bold;
-    font-size: 18px;
-    /* Large font size */
-    border: none;
-    /* No border */
-    border-radius: 30px;
-    /* Rounded corners */
-    padding: 14px 28px;
-    /* Large padding */
-    cursor: pointer;
-    /* Cursor on hover */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    /* Subtle shadow */
-    animation: button-shimmer 2s infinite;
-    transition: all 0.3s ease-in-out;
-    /* Smooth transition */
-}
-
-#pokeImg {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* hover effect */
-#pokeImg:hover {
-    transform: scale(1.1);
-}
-
-#pokeImg {
-    opacity: 0;
-}
-
-#pokeImg.loaded {
-    opacity: 1;
-}
-
-/* Hover animation */
-.beautiful-button:hover {
-    background: linear-gradient(to bottom, #2c2f63, #5b67b7);
-    animation: button-particles 1s ease-in-out infinite;
-    transform: translateY(-2px);
-}
-
-/* Click animation */
-.beautiful-button:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Shimmer animation */
-@keyframes button-shimmer {
-    0% {
-        background-position: left top;
-    }
-
-    100% {
-        background-position: right bottom;
-    }
-}
-
-/* Particle animation */
-@keyframes button-particles {
-    0% {
-        background-position: left top;
-    }
-
-    100% {
-        background-position: right bottom;
-    }
 }
 
 .input {
@@ -173,11 +80,73 @@ input {
     font-size: 13.4px;
 }
 
+.button {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 28px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: button-bright 2s infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+    animation: button-click 1s ease-in-out infinite;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#pokeImg {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+#pokeImg.loaded {
+    opacity: 1;
+}
+
+#pokeImg:hover {
+    transform: scale(1.1);
+}
+
 #logo {
     height: 10ch;
     width: 30ch;
 }
 
-#pokeImg {
-    display: none;
+@keyframes button-bright{
+    0% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right bottom;
+    }
+}
+
+@keyframes button-click {
+    0% {
+        background-position: left top;
+    }
+    100% {
+        background-position: right bottom;
+    }
 }
